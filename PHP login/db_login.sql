@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Nov 08, 2018 at 06:51 PM
+-- Generation Time: Nov 09, 2018 at 11:20 PM
 -- Server version: 5.7.21
 -- PHP Version: 5.6.35
 
@@ -31,14 +31,14 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `tbl_logindetails`;
 CREATE TABLE IF NOT EXISTS `tbl_logindetails` (
   `username` varchar(20) NOT NULL,
-  `hash` varchar(32) NOT NULL
+  `password` varchar(32) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_logindetails`
 --
 
-INSERT INTO `tbl_logindetails` (`username`, `hash`) VALUES
+INSERT INTO `tbl_logindetails` (`username`, `password`) VALUES
 ('user', 'dc06698f0e2e75751545455899adccc3');
 COMMIT;
 
