@@ -1,0 +1,36 @@
+
+<html>
+<head><title>LOGIN</title>
+<link href="styles.css" rel = "stylesheet" type = "text/css"/>
+</head>
+<body>
+  <form name = "frm_login" method = "post" action = "login.php">
+   <h1><center>Enter user name & password</center></h1>
+    <input type = "text" name = "txtUserName" placeholder="User Name" id = "UserName"/><br/>
+    <input type = "text" name = "txtPassword" placeholder="Password" id = "Password"/><br/>
+    <input type = "submit" name = "btnSubmit" value="SUBMIT" onClick = "return val()"/>
+    <input type = "reset" name = "btnReset" value = "RESET"/><br/>
+  </form>
+</body>
+</html>
+
+
+
+  <script type="text/javascript">
+   function val(){
+	 var x = document.getElementById("UserName").value;
+	 var y = document.getElementById("Password").value;
+
+	 if(x == ""){
+		 alert("Please do not keep the User Name blank");
+		 return false;
+	 }
+	 if(y == ""){
+		 alert("Please do not keep the Password blank");
+		 return false;
+	 }
+	   
+   }
+  </script>
+  
+
